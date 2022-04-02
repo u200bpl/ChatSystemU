@@ -1,0 +1,15 @@
+###############
+# Chat System #
+#  BY: u200b  #
+###############
+
+#
+# The messages also supporting placeholders without an extra plugin!
+# Placeholders:
+# {player} - Shows the name of the player
+#
+
+chat:
+  clear:
+    message: "&7Chat has been cleared by: &9{player}"
+    bypass: "&aChat has been cleared by &9{player}&a. But you had a bypass"

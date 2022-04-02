@@ -1,0 +1,9 @@
+name: ChatSystemU
+version: '${project.version}'
+main: me.u200b.chatsystemu.ChatSystemU
+authors: [ u200b ]
+description: Advanced Chat Control System
+
+commands:
+  chat:
+    description: chat command
