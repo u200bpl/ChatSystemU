@@ -1,6 +1,7 @@
 package me.u200b.chatsystemu;
 
 import me.u200b.chatsystemu.commands.ChatCommand;
+import me.u200b.chatsystemu.events.SendChatEvent;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -13,6 +14,7 @@ public final class ChatSystemU extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        getServer().getPluginManager().registerEvents( new SendChatEvent(this), this);
         getCommand("chat").setExecutor(new ChatCommand(this));
 
         if (!messageFile.exists()) saveResource("message.yml", true);

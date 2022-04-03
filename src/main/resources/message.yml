@@ -10,6 +10,13 @@
 #
 
 chat:
+  no-perms: "&cYou dont have the right permissions to execute this command"
   clear:
     message: "&7Chat has been cleared by: &9{player}"
-    bypass: "&aChat has been cleared by &9{player}&a. But you had a bypass"
+    bypass: "&7Chat has been cleared by &9{player}&a. But you had a bypass"
+
+  mute:
+    bypass: "&7Chat has been muted by &9{player}&a. But you had a bypass"
+    bc-mute: "&7Chat has been muted by &9{player}"
+    bc-unmute: "&7Chat has been unmuted by &9{player}"
+    cant-talk: "&cChat has been muted. You cant talk!"
