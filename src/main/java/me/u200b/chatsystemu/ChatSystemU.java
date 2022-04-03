@@ -24,6 +24,8 @@ public final class ChatSystemU extends JavaPlugin {
         } catch (Exception e) {
             getLogger().warning("Saving files failed: " + e.getMessage());
         }
+
+        new Metrics(this, 14835);
     }
 
     @Override
